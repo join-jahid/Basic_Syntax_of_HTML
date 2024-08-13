@@ -1,0 +1,160 @@
+HTML সিনট্যাক্সের বিস্তারিত ব্যাখ্যা
+
+HTML (HyperText Markup Language) ওয়েব পেজ তৈরির জন্য ব্যবহৃত একটি মার্কআপ ল্যাঙ্গুয়েজ। HTML সিনট্যাক্সে কিছু মৌলিক উপাদান রয়েছে যা পেজের কাঠামো এবং কন্টেন্ট নির্ধারণ করে। এখানে HTML সিনট্যাক্সের বিস্তারিত ব্যাখ্যা দেওয়া হলো:
+
+1. DOCTYPE ডিক্লারেশন
+- HTML ডকুমেন্টের শুরুতে থাকে।
+- ব্রাউজারকে বলে দেয় যে, এটি একটি HTML5 ডকুমেন্ট।
+- কোড:
+  ```html
+  <!DOCTYPE html>
+  ```
+
+ 2. HTML ট্যাগ
+- সমস্ত HTML কন্টেন্ট `<html>` এবং `</html>` ট্যাগের মধ্যে থাকে।
+- কোড:
+  ```html
+  <html>
+      <!-- Content goes here -->
+  </html>
+  ```
+
+3. Head ট্যাগ
+- ডকুমেন্টের মেটা তথ্য, স্টাইল শীট, স্ক্রিপ্ট এবং টাইটেল থাকে।
+- `<head>` এবং `</head>` ট্যাগের মধ্যে থাকে।
+- কোড:
+  ```html
+  <head>
+      <title>Page Title</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="A description of the page">
+      <link rel="stylesheet" href="styles.css">
+      <script src="script.js"></script>
+  </head>
+  ```
+
+4. Body ট্যাগ
+- ওয়েব পেজের দৃশ্যমান কন্টেন্ট যেমন টেক্সট, ইমেজ, লিঙ্ক ইত্যাদি থাকে।
+- `<body>` এবং `</body>` ট্যাগের মধ্যে সমস্ত কন্টেন্ট থাকে।
+- কোড:
+  ```html
+  <body>
+      <h1>Welcome to My Website</h1>
+      <p>This is a paragraph.</p>
+      <a href="https://example.com">Visit Example.com</a>
+  </body>
+  ```
+
+
+5. HTML-এর `<footer>` ট্যাগ ওয়েব পেজের নিচের অংশে ব্যবহৃত হয়, যেখানে সাধারণত কপিরাইট নোটিস, যোগাযোগের তথ্য, এবং সোশ্যাল মিডিয়া লিঙ্কের মতো তথ্য থাকে। এটি পেজের শেষের দিকে স্থাপিত হয় এবং পেজের অন্যান্য অংশের জন্যও ব্যবহার করা যেতে পারে।
+
+
+```html
+<footer>
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    <p>Contact: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+    <ul>
+        <li><a href="https://twitter.com/yourcompany" target="_blank">Twitter</a></li>
+        <li><a href="https://facebook.com/yourcompany" target="_blank">Facebook</a></li>
+    </ul>
+</footer>
+```
+
+এটি একটি সাধারণ `<footer>` ট্যাগের উদাহরণ যেখানে কপিরাইট, ইমেইল লিংক, এবং সোশ্যাল মিডিয়া লিঙ্ক রয়েছে।
+
+
+ 5. ট্যাগের গঠন
+- প্রতিটি HTML ট্যাগের একটি ওপেনিং এবং ক্লোজিং ট্যাগ থাকে।
+- কিছু ট্যাগ যেমন `<img>` এবং `<br>` সেলফ-ক্লোজিং।
+- কোড:
+  ```html
+  <p>This is a paragraph.</p>
+  <img src="image.jpg" alt="Description of image">
+  <br>
+  ```
+
+6. এট্রিবিউটস
+- HTML ট্যাগের মধ্যে এট্রিবিউটস থাকে যা ট্যাগের বৈশিষ্ট্য নির্ধারণ করে।
+- এট্রিবিউটস সাধারণত ওপেনিং ট্যাগে থাকে এবং `name="value"` ফরম্যাটে লেখা হয়।
+- কোড:
+  ```html
+  <a href="https://example.com" target="_blank">Click here</a>
+  <img src="image.jpg" alt="Description of image" width="300" height="200">
+  ```
+
+7. নেস্টেড ট্যাগ
+- এক ট্যাগের ভেতরে অন্য ট্যাগ থাকতে পারে।
+- নেস্টিং করার সময়, ট্যাগগুলো সঠিকভাবে ক্লোজ করতে হবে।
+- কোড:
+  ```html
+  <div>
+      <h2>Section Title</h2>
+      <p>This is a nested paragraph.</p>
+  </div>
+  ```
+
+8. ট্যাগের ভুল ক্লোজিং
+- প্রতিটি ওপেনিং ট্যাগের ক্লোজিং ট্যাগ থাকতে হবে।
+- ভুল ক্লোজিং ডকুমেন্টের কাঠামোকে ক্ষতিগ্রস্ত করতে পারে।
+- কোড:
+  ```html
+  <!-- সঠিক -->
+  <p>This is a correct paragraph.</p>
+
+  <!-- ভুল -->
+  <p>This paragraph is missing a closing tag.
+  ```
+
+9. HTML মন্তব্য
+- কোডে মন্তব্য যুক্ত করার জন্য ব্যবহৃত হয়। ব্রাউজার মন্তব্যগুলো প্রদর্শন করে না।
+- কোড:
+  ```html
+  <!-- This is a comment -->
+  ```
+
+10. HTML Entities
+- বিশেষ অক্ষর প্রদর্শনের জন্য HTML Entities ব্যবহৃত হয়, যেমন &copy; (©), &lt; (<), &gt; (>)।
+- কোড:
+  ```html
+  &copy; 2024 Your Company
+  ```
+
+11. Attributes and Values
+- class: CSS স্টাইলস এবং জাভাস্ক্রিপ্ট কোডে টার্গেট করার জন্য ব্যবহৃত হয়।
+- id: ইউনিক আইডেন্টিফায়ার হিসেবে ব্যবহৃত হয়, যা CSS এবং জাভাস্ক্রিপ্ট দ্বারা টার্গেট করা হয়।
+- style: সরাসরি স্টাইল প্রয়োগ করার জন্য ব্যবহৃত হয়।
+- কোড:
+  ```html
+  <div id="uniqueID" class="myClass" style="color: blue;">
+      This is a styled div.
+  </div>
+  ```
+
+12.Forms and Input Elements
+- ব্যবহারকারীর ইনপুট নেয়ার জন্য ফর্ম ব্যবহার করা হয়।
+- প্রধান ফর্ম উপাদানগুলোর মধ্যে `<form>`, `<input>`, `<textarea>`, `<button>`, `<select>`, এবং `<option>` অন্তর্ভুক্ত।
+- কোড:
+  ```html
+  <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <input type="submit" value="Submit">
+  </form>
+  ```
+13. Tables
+- টেবিল তৈরি করার জন্য ব্যবহৃত হয়। প্রধান ট্যাগগুলোর মধ্যে `<table>`, `<tr>`, `<th>`, এবং `<td>` অন্তর্ভুক্ত।
+- কোড:
+  ```html
+  <table>
+      <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+      </tr>
+      <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+      </tr>
+  </table>
+  ```
+
+এই HTML সিনট্যাক্সের মাধ্যমে, আপনি ওয়েব পেজের মৌলিক কাঠামো এবং কন্টেন্ট সঠিকভাবে তৈরি এবং পরিচালনা করতে পারবেন।
